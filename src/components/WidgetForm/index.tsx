@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import { CloseButton } from "../CloseButton";
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep";
 
@@ -54,7 +53,7 @@ export function WidgetForm() {
           ) : (
             <FeedbackContentStep
               feedbackType={feedbackType}
-              onFeeckbackRestartRequested={handleRestartFeedback}
+              onFeedbackRestartRequested={handleRestartFeedback}
               onFeedbackSent={() => setFeedbackSent(true)}
             />
           )}
